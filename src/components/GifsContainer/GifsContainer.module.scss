@@ -1,0 +1,7 @@
+.gifs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+    gap: 20px; /* Отступы между блоками */
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
