@@ -1,7 +1,11 @@
 .form {
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 576px) {
+    gap: 15px;
+  }
 }

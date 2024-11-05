@@ -1,7 +1,15 @@
 .gifs-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
-    gap: 20px; /* Отступы между блоками */
-    margin-top: 40px;
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+  gap: 20px; /* Отступы между блоками */
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

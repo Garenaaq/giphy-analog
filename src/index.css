@@ -1,11 +1,18 @@
 * {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 0;
 }
 
 body {
-  background: linear-gradient(45deg, #6A0572, #B83280, #7B2CBF, #9D4EDD, #E0B3FF);
+  background: linear-gradient(
+    45deg,
+    #6a0572,
+    #b83280,
+    #7b2cbf,
+    #9d4edd,
+    #e0b3ff
+  );
   background-size: 300% 300%;
   animation: sunsetAnimation 10s ease infinite;
 }
@@ -33,5 +40,13 @@ ul {
 }
 
 #root {
-  margin: 0 400px;
+  margin: 0 20%;
+
+  @media (max-width: 1200px) {
+    margin: 0 10%;
+  }
+
+  @media (max-width: 576px) {
+    margin: 0 2%;
+  }
 }

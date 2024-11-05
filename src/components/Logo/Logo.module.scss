@@ -1,4 +1,8 @@
 .logo {
-    margin-top: 20px;
-    max-width: 320px;
+  margin-top: 20px;
+  max-width: 320px;
+
+  @media (max-width: 576px) {
+    max-width: 295px;
+  }
 }
