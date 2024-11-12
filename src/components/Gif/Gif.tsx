@@ -1,7 +1,7 @@
 import styles from './Gif.module.scss';
 
 interface IGifProps {
-    urlGif: string
+    urlGif?: string
 }
 
 export default function Gif({ urlGif }: IGifProps) {

@@ -41,6 +41,10 @@ ul {
 
 #root {
   margin: 0 20%;
+  
+  @media (max-width: 1600px) {
+    margin: 0 15%;
+  }
 
   @media (max-width: 1200px) {
     margin: 0 10%;

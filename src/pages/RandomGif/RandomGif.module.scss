@@ -1,0 +1,24 @@
+.random-gif {
+    margin-top: 40px;
+    width: 984px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+        width: 785px;
+    }
+
+    @media (max-width: 920px) {
+        width: 600px;
+    }
+
+    @media (max-width: 650px) {
+        width: 410px;
+    }
+
+    @media (max-width: 430px) {
+        width: 320px;
+    }
+}

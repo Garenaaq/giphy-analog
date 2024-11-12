@@ -1,6 +1,6 @@
 import styles from './GifsContainer.module.scss';
 import Gif from "../Gif/Gif";
-import { IGifs } from '../../store/useGifsTrending';
+import IGifs from '../../interface/IGifs';
 
 interface IGifsContainerProps {
     gifs: IGifs[]
