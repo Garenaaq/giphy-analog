@@ -17,6 +17,7 @@ const useGifRandom = create<IGifRandomState>((set: any) => ({
     loading: false,
     getRandomGif: async () => {
         try {
+            set({ loading: true });
             const response = await fetch(
                 `${BASE_URL}/random?api_key=${API_KEY}`
             );
@@ -27,7 +28,7 @@ const useGifRandom = create<IGifRandomState>((set: any) => ({
                 url: data.data.images.fixed_height.url,
             };
 
-            set({ gif });
+            set({ gif, loading: false });
         } catch (error: any) {
             set({ error: error.message });
         }

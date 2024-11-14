@@ -27,8 +27,8 @@ const useGifsSearch = create<IGifsState>((set: any, get: any) => ({
     },
 
     searchGifs: async (query: string) => {
-        set({ loading: true, error: null, query });
         try {
+            set({ loading: true, error: null, query });
             const response = await fetch(
                 `${BASE_URL}/search?api_key=${API_KEY}&q=${query}&limit=9&offset=0`
             );
@@ -44,8 +44,8 @@ const useGifsSearch = create<IGifsState>((set: any, get: any) => ({
     },
 
     loadMoreGifs: async () => {
-        set({ loading: true, error: null });
         try {
+            set({ loading: true, error: null });
             const newOffset = get().offset + 9;
             const response = await fetch(
                 `${BASE_URL}/search?api_key=${API_KEY}&q=${

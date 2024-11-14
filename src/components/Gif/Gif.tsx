@@ -6,6 +6,6 @@ interface IGifProps {
 
 export default function Gif({ urlGif }: IGifProps) {
     return (
-        <img src={urlGif} alt="gif" className={styles['gifs-container__gif']} />
+        <img src={urlGif} alt="gif" className={styles['gifs-container__gif']} loading="lazy" />
     )
 }

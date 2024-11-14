@@ -40,7 +40,7 @@ ul {
 }
 
 #root {
-  margin: 0 20%;
+  margin: 0 25%;
   
   @media (max-width: 1600px) {
     margin: 0 15%;

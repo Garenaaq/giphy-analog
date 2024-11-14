@@ -22,6 +22,7 @@ const useGifsTrending = create<IGifsState>((set: any, get: any) => ({
     trendingGifs: async () => {
         if (get().gifs.length > 0) return;
         try {
+            set({ loading: true });
             const response = await fetch(
                 `${BASE_URL}/trending?api_key=${API_KEY}&limit=9&offset=0`
             );
@@ -32,7 +33,7 @@ const useGifsTrending = create<IGifsState>((set: any, get: any) => ({
                 url: gif.images.fixed_height.url,
             }));
 
-            set({ gifs });
+            set({ gifs, loading: false });
         } catch (error: any) {
             set({ error: error.message });
         }
@@ -40,6 +41,7 @@ const useGifsTrending = create<IGifsState>((set: any, get: any) => ({
 
     loadMoreGifs: async () => {
         try {
+            set({ loading: true });
             const newOffset: number = get().offset + 9;
 
             const response = await fetch(
