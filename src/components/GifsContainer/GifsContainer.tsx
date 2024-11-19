@@ -12,7 +12,7 @@ export default function GifsContainer({ gifs }: IGifsContainerProps) {
         <>
             {gifs.length > 0 ?
                 <section className={styles['gifs-container']}>
-                    {gifs.map(gif => <Gif key={gif.id} urlGif={gif.url} />)}
+                    {gifs.map(gif => <Gif key={gif.id} urlGif={gif.url} originalUrl={gif.originalUrl} />)}
                 </section>
                 : ""
             }

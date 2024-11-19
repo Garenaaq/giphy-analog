@@ -31,6 +31,7 @@ const useGifsTrending = create<IGifsState>((set: any, get: any) => ({
             const gifs = data.data.map((gif: any) => ({
                 id: gif.id,
                 url: gif.images.fixed_height.url,
+                originalUrl: gif.images.original.url,
             }));
 
             set({ gifs, loading: false });
@@ -51,6 +52,7 @@ const useGifsTrending = create<IGifsState>((set: any, get: any) => ({
             const gifsMore = data.data.map((gif: any) => ({
                 id: gif.id,
                 url: gif.images.fixed_height.url,
+                originalUrl: gif.images.original.url,
             }));
 
             set({

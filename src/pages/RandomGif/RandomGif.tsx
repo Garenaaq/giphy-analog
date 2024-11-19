@@ -20,7 +20,7 @@ export default function RandomGif() {
         <section className={styles['random-gif']}>
             {loading ? <Loader /> :
                 <>
-                    <Gif urlGif={gif?.url} />
+                    <Gif urlGif={gif?.url} style={"gifs-container__gif_random"} originalUrl={gif?.originalUrl} />
                     <Button onClick={handleClickBtnNext} style={"button-type-next-gif"} />
                 </>
             }

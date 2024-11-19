@@ -8,7 +8,16 @@
     object-fit: cover;
     box-shadow: 0 10px 20px #0006;
 
+    &-link {
+        width: 100%;
+        height: 100%;
+    }
+
     &:hover {
         transform: translateY(-10px);
+    }
+
+    &_random {
+        height: 100%;
     }
 }

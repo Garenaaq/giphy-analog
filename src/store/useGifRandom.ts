@@ -26,6 +26,7 @@ const useGifRandom = create<IGifRandomState>((set: any) => ({
             const gif = {
                 id: data.data.id,
                 url: data.data.images.fixed_height.url,
+                originalUrl: data.data.images.original.url,
             };
 
             set({ gif, loading: false });
