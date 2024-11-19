@@ -1,3 +1,11 @@
+Хостинг: http://q9381155.beget.tech/
+
+Пет-проект, созданный для практики и освоения следующих технологий: 
+1) Ознакомления с Giphy API и принципами работы с внешними API в React.
+2) Практики в использовании Zustand как легковесного state-менеджера.
+3) Изучения и применения TypeScript в реальном приложении.
+4) Улучшения навыков работы с React.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
